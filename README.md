@@ -1,5 +1,9 @@
 # Yapılacaklar — Bir adım daha
 
+## Lisans
+
+Bu proje [MIT lisansı](LICENSE) ile sunulmaktadır.
+
 Türkçe, sade ve telefon ekranlarına uyumlu bir yapılacaklar uygulaması. İlk GitHub projesi olarak HTML, CSS, JavaScript ve Git'in temel akışını öğrenmek için hazırlanmıştır.
 
 ## Kullanım
