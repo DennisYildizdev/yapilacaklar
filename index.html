@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gününü sadeleştir. Görevlerini ekle, tamamla ve küçük adımlarla ilerle.">
+  <title>Yapılacaklar — Bir adım daha</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23285d48'/%3E%3Cpath d='m17 33 10 10 21-23' fill='none' stroke='%23fff' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="brand"><span class="brand-mark" aria-hidden="true">✓</span> yapılacaklar <span class="edition">KENDİ HIZINDA.</span></header>
+    <main>
+      <div class="intro"><p class="eyebrow">BÜYÜK İŞLER, KÜÇÜK ADIMLAR.</p><h1>Bir adım daha.</h1><p>Aklındakileri yaz. Birine odaklan. Tamamladıkça hafifle.</p></div>
+      <section class="notebook" aria-labelledby="list-title">
+        <div class="section-heading"><h2 id="list-title">Yapılacaklarım</h2><span id="count">0 görev</span></div>
+        <form id="task-form" novalidate>
+          <label for="task-input">Sıradaki küçük adımın ne?</label>
+          <div class="input-row"><input id="task-input" name="task" placeholder="Örneğin, kitabımdan 10 sayfa oku" autocomplete="off" maxlength="500" aria-describedby="input-error"><button class="add" type="submit"><span aria-hidden="true">＋</span> Ekle</button></div>
+          <p id="input-error" class="error" role="alert"></p>
+        </form>
+        <p id="storage-error" class="storage-error" role="alert" hidden></p>
+        <ul id="task-list" aria-label="Görevler"></ul>
+        <div id="empty" class="empty"><span class="empty-mark" aria-hidden="true">✓</span><h3>Yeni bir adım için yer var.</h3><p>İlk görevini yukarıya yaz.<br>Başlamak için küçük bir adım yeter.</p></div>
+        <div class="notebook-footer"><span class="dot" aria-hidden="true"></span><span id="progress">Bugünün ritmini sen belirle.</span></div>
+      </section>
+      <p class="privacy">Sana ait bir liste. Görevlerin yalnızca bu tarayıcıda saklanır.</p>
+      <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+      <noscript>Görevlerini yönetmek için tarayıcında JavaScript'i etkinleştir.</noscript>
+    </main>
+    <footer>Her şeyi bugün bitirmek zorunda değilsin.</footer>
+  </div>
+</body>
+</html>
